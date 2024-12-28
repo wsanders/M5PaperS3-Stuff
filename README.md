@@ -1,5 +1,8 @@
 # M5PaperS3-Stuff
 
+## Hints 
+- To install the epdiy library, just clone it into your arduino IDE libraries directory.
+
 ## Arduino IDE: M5PaperS3 Simple Badge.
 
 Simple demo to display a badge on the PaperS3.
@@ -11,10 +14,10 @@ engineering the XBM file format is tedious. Create your badge in GIMP as an imag
 
 At least in the Arduino IDE, gcc header files seem to need to end in .h.
 
-At this point in time, M5Unified for PaperS3 is not ready for prime time,
-my call to M5Begin() just put the device in a crash/reboot loop.
+At this point in time, using M5Unified for PaperS3 is a work in progress.
+My call to M5Begin() just put the device in a crash/reboot loop. 
 
-After the program starts, a dot in the lower right of the scren will blink
+After the program starts, a dot in the lower right of the screen will blink
 to let you know the device is powered on. While the dot is TFT_WHITE, 
 double click the power button to power it off.
 
