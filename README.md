@@ -1,6 +1,6 @@
 # M5PaperS3-Stuff
 
-Arduino IDE: M5PaperS3 Simple Badge.
+##Arduino IDE: M5PaperS3 Simple Badge.
 
 Simple demo to display a badge on the PaperS3.
 
