@@ -1,7 +1,7 @@
 # M5PaperS3-Stuff
 
 ## Hints 
-- To install the epdiy library, just clone it into your arduino IDE libraries directory.
+- To install the epdiy library, I just cloned it into my Arduino IDE "libraries" directory. No further configuration was required.
 
 ## Arduino IDE: M5PaperS3 Simple Badge.
 
