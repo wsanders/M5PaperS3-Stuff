@@ -3,8 +3,6 @@
 // with XBM file format, tweak macro names to not start with number.
 // gcc header files seem to need to end with .h.
 
-// At this point in time, M5Unified for PaperS3 is not ready for prime time
-//
 // After the program starts, a dot in the lower right of the scren will blink
 // to let you know the device is powered on. While the dot is TFT_WHITE, 
 // double click the power button to power it off.
@@ -30,7 +28,7 @@ void setup(void)
   }
   // eyelet at top
   M5.Display.setRotation(M5.Display.getRotation() ^ 2);
-  // Crashes here, do not use: M5.begin();
+  // For later - try tone, etc.
   //M5.Speaker.setVolume(255);
   //M5.Speaker.tone(2000, 100); 
   M5.Display.println("I RUN");
