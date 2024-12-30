@@ -14,10 +14,13 @@ engineering the XBM file format is tedious. Create your badge in GIMP as an imag
 
 At least in the Arduino IDE, gcc header files seem to need to end in .h.
 
-At this point in time, using M5Unified for PaperS3 is a work in progress. 
+Features from M5United
+- M5.Imu.sleep call hopefully saves some power - hard to tell if it's working.
+- Draw local time in PST8PDT timezone at bottom of screen. RTC must be previously set to UTC.
+- Use M5.Power.timerSleep to sleep device and then wake it up every hour to update the date.
 
-After the program starts, a dot in the lower right of the screen will blink
-to let you know the device is powered on. While the dot is TFT_WHITE, 
+If the timerSLeep call is removed or fails, a dot in the lower right of the screen will blink
+to let you know the device is still powered on. While the dot is TFT_WHITE, 
 double click the power button to power it off.
 
 
