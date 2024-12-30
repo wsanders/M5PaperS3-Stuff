@@ -46,6 +46,9 @@ void setup(void)
   M5.Display.startWrite();
   M5.Display.drawXBitmap(0, 0, xbm_bits, xbm_width, xbm_height, TFT_BLACK);
   M5.Display.endWrite();
+  //'class m5::M5Unified' has no member named 'shutdown'
+  //M5.shutdown();
+
 }
 
 void loop(void)
