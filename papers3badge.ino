@@ -49,7 +49,9 @@ void setup(void)
   auto tm = localtime(&t);
   sprintf(datestring, "%3s %02d/%02d/%04d",
       wd[tm->tm_wday], tm->tm_mon+1, tm->tm_mday, tm->tm_year+1900);
-  M5.Display.setFont(&fonts::DejaVu12);
+  // DOn't know if this is a bug or a feature, but it works!
+  M5.Display.setFont(&fonts::Font4);
+  M5.Display.setTextSize(2.0);
   w = M5.Display.textWidth(datestring);
   M5.Display.drawString(datestring,(540-w)/2,900);
   M5.Display.endWrite();
